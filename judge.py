@@ -28,7 +28,7 @@ def start_server():
         print(f"端口 {server_port} 已被佔用，嘗試終止相關進程")
         kill_process_on_port(server_port)
     print('正在啟動伺服器')
-    server_process = subprocess.Popen(['python', '../src/FreeGPT4_Server.py'])
+    server_process = subprocess.Popen(['python', './src/FreeGPT4_Server.py'])
     time.sleep(10)  # 假設10秒足夠伺服器啟動
     return server_process
 
